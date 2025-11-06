@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import AboutPage from "./pages/About";
 import NotFound from "./pages/Error";
 import ServicesPage from "./pages/Services";
+import GalleryPage from "./pages/Gallery";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </Router>
