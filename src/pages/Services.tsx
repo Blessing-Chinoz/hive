@@ -15,6 +15,13 @@ import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
 import { useTheme } from "../components/Theme_Context";
 
+import poster from "../assets/services/poster 1 copy.jpg"
+import flyer from "../assets/services/flyer.jpeg"
+import card from "../assets/services/card.jpeg"
+import logo from "../assets/services/logo.jpeg"
+import brochure from "../assets/services/brochure.jpeg"
+import banner from "../assets/services/banner.jpeg"
+
 const ServicesPage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const { isDarkMode, setIsDarkMode, themeClasses } = useTheme();
@@ -42,7 +49,7 @@ const ServicesPage = () => {
         "Print-ready files",
       ],
       image:
-        "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&q=80",
+      poster,
       whatsappMessage:
         "Hi! HIVE Graphix. I'm interested in getting a Poster Design. Can you provide more details and a quote?",
     },
@@ -60,7 +67,7 @@ const ServicesPage = () => {
         "Multiple formats (PDF, JPG)",
       ],
       image:
-        "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80",
+      flyer,
       whatsappMessage:
         "Hi! HIVE Graphix.I'm interested in getting a Flyer Design. Can you provide more details and a quote?",
     },
@@ -78,7 +85,7 @@ const ServicesPage = () => {
         "QR code integration",
       ],
       image:
-        "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+        card,
       whatsappMessage:
         "Hi! HIVE GraphixI. I'm interested in getting Business Cards designed. Can you provide more details and a quote?",
     },
@@ -96,7 +103,7 @@ const ServicesPage = () => {
         "Usage guidelines",
       ],
       image:
-        "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=800&q=80",
+       logo,
       whatsappMessage:
         "Hi! HIVE Graphix. I'm interested in getting a Logo designed. Can you provide more details and a quote?",
     },
@@ -114,7 +121,7 @@ const ServicesPage = () => {
         "Print specifications",
       ],
       image:
-        "https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=800&q=80",
+       brochure,
       whatsappMessage:
         "Hi! I'm interested in getting a Brochure designed. Can you provide more details and a quote?",
     },
@@ -132,7 +139,7 @@ const ServicesPage = () => {
         "High-resolution output",
       ],
       image:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+        banner,
       whatsappMessage:
         "Hi! I'm interested in getting a Banner designed. Can you provide more details and a quote?",
     },
@@ -273,7 +280,7 @@ const ServicesPage = () => {
                     <img
                       src={service.image}
                       alt={service.title}
-                      className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+                      className="w-full  sm:h-[300px] lg:h-[350px] h-auto object-contain transform group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
                     <div className="absolute top-4 left-4 sm:top-6 sm:left-6">
