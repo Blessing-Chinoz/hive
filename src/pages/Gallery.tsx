@@ -8,6 +8,14 @@ import logo from "../assets/gallery/logo 1.jpg";
 import card1 from "../assets/gallery/card1.jpg";
 import card2 from "../assets/gallery/card2.jpg";
 import photshoot from "../assets/gallery/Photoshoot.jpg";
+import music from "../assets/gallery/Davido.jpeg";
+import opening from "../assets/gallery/resturant.jpeg";
+import brochure from "../assets/gallery/brochure.jpeg";
+import banner1 from "../assets/gallery/banner1.jpeg";
+import foodlogo from "../assets/gallery/foodlogo.jpeg";
+import website from "../assets/gallery/website.jpeg";
+import estate from "../assets/gallery/estate.jpeg";
+import banner2 from "../assets/gallery/grandbanner.jpeg";
 
 const GalleryPage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -44,8 +52,7 @@ const GalleryPage = () => {
       title: "Music Festival Poster",
       description:
         "Bold and vibrant poster design for a summer music festival. Eye-catching typography and dynamic layout create instant visual impact.",
-      image:
-        "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&q=80",
+      image: music,
       color: "from-pink-500 to-orange-500",
       popular: true,
     },
@@ -55,8 +62,7 @@ const GalleryPage = () => {
       title: "Restaurant Opening Flyer",
       description:
         "Appetizing flyer design for a new restaurant launch. Clean layout with mouth-watering imagery that drives foot traffic and excitement.",
-      image:
-        "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80",
+      image: opening,
       color: "from-green-500 to-teal-600",
       popular: false,
     },
@@ -76,8 +82,7 @@ const GalleryPage = () => {
       title: "Corporate Brochure",
       description:
         "Multi-page brochure showcasing company services and values. Strategic layout guides readers through information seamlessly and professionally.",
-      image:
-        "https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=800&q=80",
+      image: brochure,
       color: "from-indigo-500 to-blue-700",
       popular: false,
     },
@@ -87,8 +92,7 @@ const GalleryPage = () => {
       title: "Trade Show Banner",
       description:
         "Large format banner designed for maximum visibility at events. Bold graphics and clear messaging attract attention from across the room.",
-      image:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+      image: banner1,
       color: "from-red-500 to-yellow-500",
       popular: true,
     },
@@ -98,8 +102,7 @@ const GalleryPage = () => {
       title: "Organic Food Brand",
       description:
         "Nature-inspired logo for an organic food company. Warm colors and flowing lines communicate freshness and sustainability perfectly.",
-      image:
-        "https://images.unsplash.com/photo-1635322966219-b75ed372eb01?w=800&q=80",
+      image: foodlogo,
       color: "from-green-600 to-lime-500",
       popular: false,
     },
@@ -108,7 +111,7 @@ const GalleryPage = () => {
       category: "poster",
       title: "Photoshot Poster",
       description:
-        "Energetic poster design motivating people to join a fitness challenge. Dynamic composition and powerful imagery inspire action immediately.",
+        "Stunning photoshoot poster capturing raw emotion and creative vision. Professional composition and striking imagery showcase the art of portrait photography..",
       image: photshoot,
       color: "from-orange-600 to-red-600",
       popular: false,
@@ -119,8 +122,7 @@ const GalleryPage = () => {
       title: "E-Commerce Website",
       description:
         "Modern, responsive website design with intuitive navigation. Clean interface optimized for conversions and exceptional user experience.",
-      image:
-        "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
+      image: website,
       color: "from-cyan-500 to-blue-600",
       popular: true,
     },
@@ -130,8 +132,7 @@ const GalleryPage = () => {
       title: "Real Estate Flyer",
       description:
         "Professional property listing flyer with stunning photography. Strategic information hierarchy helps potential buyers make quick decisions.",
-      image:
-        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+      image: estate,
       color: "from-purple-600 to-pink-600",
       popular: false,
     },
@@ -151,8 +152,7 @@ const GalleryPage = () => {
       title: "Grand Opening Banner",
       description:
         "Celebratory banner announcing a new store opening. Festive design creates excitement and draws crowds to the launch event.",
-      image:
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
+      image: banner2,
       color: "from-pink-600 to-purple-700",
       popular: true,
     },
@@ -435,18 +435,17 @@ const GalleryPage = () => {
           >
             <X className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </button>
-
           <div
-            className={`max-w-5xl w-full ${
+            className={`w-auto max-w-4xl max-h-[85vh] overflow-y-auto ${
               isDarkMode ? "bg-gray-900" : "bg-white"
-            } rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl animate-in zoom-in duration-500`}
+            } rounded-2xl sm:rounded-3xl shadow-2xl animate-in zoom-in duration-500`}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative aspect-video">
+            <div className="relative max-h-[60vh] flex items-center justify-center bg-black">
               <img
                 src={selectedImage.image}
                 alt={selectedImage.title}
-                className="w-full h-full object-cover"
+                className="max-w-full max-h-[60vh] w-auto h-auto object-contain"
               />
               <div
                 className={`absolute inset-0 bg-linear-to-t ${selectedImage.color} opacity-20`}
