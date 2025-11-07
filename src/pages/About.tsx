@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import {
   Zap,
   Users,
@@ -15,13 +17,14 @@ import {
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
 import { useTheme } from "../components/Theme_Context";
-import founder from "../assets/images/founder.jpg"
-import cup from "../assets/images/cup.jpg"
+import founder from "../assets/images/founder.jpg";
+import cup from "../assets/images/cup.jpg";
 import logo from "../assets/images/logo 1.jpg";
 
 const AboutPage = () => {
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
   const { isDarkMode, setIsDarkMode, themeClasses } = useTheme();
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     const handleMouseMove = (e: { clientX: any; clientY: any }) => {
@@ -234,7 +237,9 @@ const AboutPage = () => {
                 <h3 className="text-xl sm:text-2xl font-bold text-blue-500 mb-2">
                   {item.title}
                 </h3>
-                <p className={`text-sm sm:text-base ${themeClasses.textSecondary} leading-relaxed`}>
+                <p
+                  className={`text-sm sm:text-base ${themeClasses.textSecondary} leading-relaxed`}
+                >
                   {item.description}
                 </p>
               </div>
@@ -258,7 +263,9 @@ const AboutPage = () => {
           <blockquote className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 sm:mb-6 leading-relaxed">
             "Design should solve problems, not create them"
           </blockquote>
-          <p className="text-white/80 text-base sm:text-lg">Simple, effective, human</p>
+          <p className="text-white/80 text-base sm:text-lg">
+            Simple, effective, human
+          </p>
         </div>
       </section>
 
@@ -278,7 +285,9 @@ const AboutPage = () => {
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">
                     Blessing Chinokopota
                   </h3>
-                  <p className="text-sm sm:text-base text-white/90">Founder & Creative Lead</p>
+                  <p className="text-sm sm:text-base text-white/90">
+                    Founder & Creative Lead
+                  </p>
                 </div>
               </div>
             </div>
@@ -440,7 +449,10 @@ const AboutPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <button
-                className={`relative bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 sm:px-8 py-3 rounded-xl sm:rounded-2xl text-sm sm:text-base font-bold transition-all transform hover:scale-105 shadow-lg overflow-hidden group`}
+                onClick={() => navigate("/services")}
+                className="relative bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 
+                 text-white px-6 sm:px-8 py-3 rounded-xl sm:rounded-2xl text-sm sm:text-base font-bold 
+                 transition-all transform hover:scale-105 shadow-lg overflow-hidden group"
               >
                 <span className="relative z-10 flex items-center justify-center">
                   Get Started
@@ -449,6 +461,7 @@ const AboutPage = () => {
               </button>
 
               <button
+                onClick={() => navigate("/gallery")}
                 className={`px-6 sm:px-8 py-3 rounded-xl sm:rounded-2xl text-sm sm:text-base font-bold border-2 ${
                   isDarkMode
                     ? "border-white/20 text-white hover:bg-white/10"

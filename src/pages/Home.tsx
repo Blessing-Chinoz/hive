@@ -1,8 +1,5 @@
 import React from "react";
 import {
-  Sparkles,
-  ArrowRight,
-  Zap,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
@@ -117,7 +114,7 @@ const Home = () => {
                   tells your story.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
+                {/* <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
                   <button
                     className={`relative bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-bold transition-all transform hover:scale-105 shadow-2xl overflow-hidden group`}
                   >
@@ -132,7 +129,7 @@ const Home = () => {
                     <Sparkles className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
                     Get Started
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -163,7 +160,7 @@ const Home = () => {
                   the digital world.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
+                {/* <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
                   <button
                     className={`relative bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-bold transition-all transform hover:scale-105 shadow-2xl overflow-hidden group`}
                   >
@@ -177,7 +174,7 @@ const Home = () => {
                   <button className="border-2 border-white/40 hover:border-white/70 text-white hover:bg-white/10 px-8 sm:px-10 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-semibold transition-all backdrop-blur-sm">
                     Learn More
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -207,7 +204,7 @@ const Home = () => {
                   brands with our creative expertise. Let's build something
                   extraordinary together.
                 </p>
-
+{/* 
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
                   <button
                     className={`relative bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-bold transition-all transform hover:scale-105 shadow-2xl overflow-hidden group`}
@@ -222,7 +219,7 @@ const Home = () => {
                   <button className="border-2 border-white/40 hover:border-white/70 text-white hover:bg-white/10 px-8 sm:px-10 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-semibold transition-all backdrop-blur-sm">
                     Contact Us
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

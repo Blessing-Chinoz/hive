@@ -57,7 +57,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <nav
-      className={`relative z-50 ${themeClasses.navBg} backdrop-blur-xl border-b ${themeClasses.border} fixed w-full top-0 transition-all duration-300`}
+     className={`sticky top-0 z-50 ${themeClasses.navBg} backdrop-blur-xl border-b ${themeClasses.border} w-full transition-all duration-300`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 lg:h-24">
